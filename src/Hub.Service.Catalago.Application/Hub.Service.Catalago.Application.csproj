@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="10.3.0" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hub.Service.Catalago.Domain\Hub.Service.Catalago.Domain.csproj" />
+    <ProjectReference Include="..\Hub.Service.Catalago.Infra\Hub.Service.Catalago.Infra.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Hub.Service.Core">
+      <HintPath>..\..\..\Core\src\Hub.Service.Core\bin\Release\net5.0\Hub.Service.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

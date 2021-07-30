@@ -1,0 +1,14 @@
+version: '3.1'
+
+services: 
+    
+    db_mysql_catalago:
+        image: mysql
+        command: --default-authentication-plugin=mysql_native_password
+        ports:
+            - 3306:3306
+        environment:
+            MYSQL_ROOT_PASSWORD: C@hUBbTg>87@BF)B
+            MYSQL_DATABASE: hub_catalago
+        volumes: 
+            - ./data:/var/lib/mysql
